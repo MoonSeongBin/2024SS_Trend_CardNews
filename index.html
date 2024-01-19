@@ -41,17 +41,21 @@
             width: 100vw;
             height: 100vh;
             overflow: hidden;
-            position: relative;
         }
 
+        .container {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+
         .main_banner {
-            width: 1320px;
-            height: 700px;
+            max-width: 900px;
             margin: 0 auto;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+
         }
 
         .swiper-slide {
@@ -60,7 +64,7 @@
         }
 
         .swiper-slide img {
-            width: 700px;
+            width: 100%;
         }
 
         .btn_next,
@@ -75,21 +79,23 @@
 </head>
 
 <body>
-    <!-- Swiper -->
-    <div class="swiper main_banner">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./images/Artboard_1.jpg" alt="page1"></div>
-            <div class="swiper-slide"><img src="./images/Artboard_2.jpg" alt="page2"></div>
-            <div class="swiper-slide"><img src="./images/Artboard_3.jpg" alt="page3"></div>
-            <div class="swiper-slide"><img src="./images/Artboard_4.jpg" alt="page4"></div>
-            <div class="swiper-slide"><img src="./images/Artboard_5.jpg" alt="page5"></div>
-            <div class="swiper-slide"><img src="./images/Artboard_6.jpg" alt="page6"></div>
+    <div class="container">
+        <!-- Swiper -->
+        <div class="swiper main_banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/Artboard_1.jpg" alt="page1"></div>
+                <div class="swiper-slide"><img src="./images/Artboard_2.jpg" alt="page2"></div>
+                <div class="swiper-slide"><img src="./images/Artboard_3.jpg" alt="page3"></div>
+                <div class="swiper-slide"><img src="./images/Artboard_4.jpg" alt="page4"></div>
+                <div class="swiper-slide"><img src="./images/Artboard_5.jpg" alt="page5"></div>
+                <div class="swiper-slide"><img src="./images/Artboard_6.jpg" alt="page6"></div>
 
+            </div>
+            <div class="swiper-button-next btn_next"></div>
+            <div class="swiper-button-prev btn_prev"></div>
+            <div class="swiper-pagination btn_page"></div>
         </div>
-        <div class="swiper-button-next btn_next"></div>
-        <div class="swiper-button-prev btn_prev"></div>
-        <div class="swiper-pagination btn_page"></div>
-    </div>
+    </div><!--container-->
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
